@@ -3,7 +3,7 @@ import mediapipe as mp
 from pathlib import Path
 
 
-INPUT_VIDEO  = r"C:\\Bono\\Ind Project\\Videos\\1000039767.mp4"             #input
+INPUT_VIDEO  = r"C:\\Bono\\Ind Project\\Videos\\1000039767.mp4" #input
 OUTPUT_VIDEO = "output_skeleton.mp4"   
 SHOW_WINDOW  = True       
 
