@@ -8,6 +8,14 @@ mp_pose = mp.solutions.pose
 # Start webcam feed
 cap = cv2.VideoCapture(0)
 
+
+window_width = 1280
+window_height = 720
+
+cv2.namedWindow("Pose Tracking", cv2.WINDOW_NORMAL)
+cv2.resizeWindow("Pose Tracking", window_width, window_height)
+
+
 with mp_pose.Pose(
     min_detection_confidence=0.5,
     min_tracking_confidence=0.5) as pose:
